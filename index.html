@@ -8,9 +8,57 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
+    <div class="fixed"><nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">EON</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a>Menu</a></li>
+      </ul>
+      
+      <section class="top-bar-section">
+        <ul class="left">
+          <li class="has-dropdown">
+            <a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">EON board</a></li>
+              <li><a href="#">Head mentors</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">First-year students</a>
+            <ul class="dropdown">
+              <li><a href="#">Why join EON?</a></li>
+              <li><a href="#">Orientation</a></li>
+              <li><a href="#">Networking</a></li>
+              <li><a href="#">Registration</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Mentors</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Links</a></li>
+        </ul>
+        
+        <ul class="right">
+          <li><a href="#">Corporate</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li class="has-form"><a href="#" class="button success">Register</a></li>
+        </ul>
+      </section>
+    </nav></div>
+    
     <div class="row">
       <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+        <ul data-orbit data-options="timer_speed: 5000; resume_on_mouseout: true; navigation_arrows: false; slide_number: false;">
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-logo.png" alt="EON"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-mentors.jpg" alt="Mentors"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-board.jpg" alt="Board"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-tour.jpg" alt="Tour"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-lunch.jpg" alt="Lunch"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-hammond.jpg" alt="Hammond Building"></li>
+          <li><img src="http://www.engr.psu.edu/eon/2013/media/carousel-networking.jpg" alt="Networking"></li>
+        </ul>
       </div>
     </div>
 
@@ -156,8 +204,8 @@
       </div>
     </div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/foundation/js/foundation.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
