@@ -2,3 +2,11 @@
 /css/*
 /bower_components/*
 /node_modules/*
+# Only include custom JavaScript
+/js/*
+!/js/app.js
+# Ignore generated .htm(l) files
+*.htm*
+# but include source texts and templates
+!/srctxt/*.htm*
+!/templates/*.html

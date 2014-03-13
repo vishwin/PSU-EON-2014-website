@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% if title %}{{ title }}&nbsp;&ndash;&nbsp;EON{% else %}Engineering Orientation Network{% endif %}</title>
+    <link rel="stylesheet" href="/eon/2014/css/app.css" />
+    <script src="/eon/2014/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    {% block body scoped %}{% endblock %}
+    {% include 'javascript.html' %}
+  </body>
+</html>
