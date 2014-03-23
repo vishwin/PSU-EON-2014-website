@@ -9,4 +9,5 @@
 *.htm*
 # but include source texts and templates
 !/srctxt/*.htm*
+!/srctxt/*/*.htm*
 !/templates/*.html
