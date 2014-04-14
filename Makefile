@@ -17,6 +17,12 @@ dist: srctxt
 	export DESTDIR=/tmp/$(DESTDIRSTEM)
 	mkdir $$DESTDIR
 	$(MAKE) -C srctxt
+	cp -r img $$DESTDIR
+	cp -r css $$DESTDIR
+	cp -r js $$DESTDIR
+	cp bower_components/modernizr/modernizr.js $$DESTDIR/js
+	cp bower_components/jquery/dist/jquery.js $$DESTDIR/js
+	cp bower_components/foundation/js/foundation.js $$DESTDIR/js
 	-tar -cf eon2014.tar -C /tmp $(DESTDIRSTEM)
 	rm -rf $$DESTDIR
 	rm -rf $$TEMPLATEDIR
