@@ -1,7 +1,9 @@
 export SRCDIR=$(PWD)
+DESTDIRSTEM=2014
 
 .PHONY: build dist
 
+.ONESHELL:
 build: srctxt
 	export TEMPLATEDIR=$(SRCDIR)/templates
 	export DESTDIR=$(SRCDIR)
@@ -12,5 +14,9 @@ dist: srctxt
 	export TEMPLATEDIR=$(SRCDIR)/templates_dist
 	mkdir $$TEMPLATEDIR
 	$(MAKE) -C templates
-	export DESTDIR=/tmp/eon2014
+	export DESTDIR=/tmp/$(DESTDIRSTEM)
+	mkdir $$DESTDIR
+	$(MAKE) -C srctxt
+	-tar -cf eon2014.tar -C /tmp $(DESTDIRSTEM)
+	rm -rf $$DESTDIR
 	rm -rf $$TEMPLATEDIR
