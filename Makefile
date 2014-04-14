@@ -3,6 +3,7 @@ DESTDIRSTEM=2014
 
 .PHONY: build dist
 
+.ONESHELL:
 build: srctxt
 	export TEMPLATEDIR=$(SRCDIR)/templates
 	export DESTDIR=$(SRCDIR)
