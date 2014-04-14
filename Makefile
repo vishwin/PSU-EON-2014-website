@@ -13,4 +13,5 @@ dist: srctxt
 	mkdir $$TEMPLATEDIR
 	$(MAKE) -C templates
 	export DESTDIR=/tmp/eon2014
+	$(MAKE) -C srctxt
 	rm -rf $$TEMPLATEDIR
