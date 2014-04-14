@@ -1,5 +1,5 @@
 export SRCDIR=$(PWD)
-DESTDIRSTEM=2014
+export DESTDIRSTEM=2014
 
 .PHONY: build dist
 
