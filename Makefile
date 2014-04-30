@@ -5,12 +5,14 @@ export DESTDIRSTEM=2014
 
 .ONESHELL:
 build: srctxt
+	grunt sass
 	export TEMPLATEDIR=$(SRCDIR)/templates
 	export DESTDIR=$(SRCDIR)
 	$(MAKE) -C srctxt
 
 .ONESHELL:
 dist: srctxt
+	grunt sass
 	export TEMPLATEDIR=$(SRCDIR)/templates_dist
 	mkdir $$TEMPLATEDIR
 	$(MAKE) -C templates
