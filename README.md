@@ -10,8 +10,8 @@ You'll need to have the following items installed before continuing.
   * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
   * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
   * [Python (3)](http://www.python.org/): The compile script was conceived and ran on Python 3, should work on Python 2 if explicitly invoked as such (i.e. not via `./compile.py`) but is not guaranteed
-  ** [Jinja2](http://jinja.pocoo.org/): Can be installed via `pip`
-  ** [python-markdown](http://pypi.python.org/pypi/Markdown)
+  * [Jinja2](http://jinja.pocoo.org/): Can be installed via `pip`
+  * [python-markdown](http://pypi.python.org/pypi/Markdown)
   * [(preferably GNU) make](http://www.gnu.org/software/make/)
 
 ## Quickstart
