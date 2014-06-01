@@ -10,5 +10,5 @@
 # but include templates
 !/templates/*.html
 # Ignore symlinked or submoduled srctxt and img
-/srctxt/*
-/img/*
+/srctxt
+/img
